@@ -1,0 +1,219 @@
+/* imports */
+
+/* fonts */
+@font-face {
+    font-family: 'Blackwood Castle Regular';
+    src: url(fonts/Blackwood\ Castle.ttf)
+}
+
+@font-face {
+    font-family: 'Black Chancery';
+    src: url(fonts/Black\ Chancery.TTF)
+}
+
+@font-face {
+    font-family: 'Quilstone';
+    src: url(fonts/Quillstone.ttf)
+}
+
+@font-face {
+    font-family: 'Shadow Into Light';
+    src: url(fonts/ShadowsIntoLight-Regular.ttf)
+}
+
+@font-face {
+    font-family: 'Cheesecake';
+    src: url(fonts/Cheesecake.ttf)
+}
+
+@font-face {
+    font-family: 'Spicy_pumkin';
+    src: url(fonts/Spicy\ Pumpkin.ttf)
+}
+
+
+/* Main css */
+
+html {
+    height: 100%;
+    background-color: black;
+}
+
+body {
+    position: fixed;
+    background-image: url(https://i.gifer.com/61s.gif);
+    background-position: right-center;     
+    background-repeat: no-repeat;
+    background-size:90% 100%;
+    background-position-x: 80%;
+    background-clip: border-box;
+    height: 100%;
+    width: 100%;
+}
+
+
+.sidebuttons{
+    list-style: none;
+    margin-bottom: 5%;
+    color: rgb(18, 250, 76);
+    
+    
+    
+}
+
+
+button.sidebuttons{
+    text-align: left;
+    
+    border: none;
+    background-color: rgb(28, 0, 0);
+    color: rgb(251, 242, 242);
+    padding-right: 5%;
+    padding-left: 5%;
+    margin-bottom: 5%;
+    width: 100%;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 25px;
+    font-family: "Cheesecake", serif;
+}
+
+button.sidebuttons:hover{
+    background-color: rgb(249, 192, 192);
+    color: black;
+    font-weight: bold;
+}
+
+button.subsidebuttons{
+    text-align: right; 
+    border: none;
+    background-color: rgb(28, 0, 0);
+    color: rgb(251, 242, 242);
+    padding-right: 5%;
+    padding-left: 5%;
+    margin-bottom: 5%;
+    width: 100%;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 25px;
+    font-family: "Cheesecake", serif;
+}
+
+button.subsidebuttons:hover{
+    background-color: rgb(249, 192, 192);
+    color: black;
+    font-weight: bold;
+}
+
+
+
+.top{
+    top: 0;
+    position: fixed;
+    background-color: rgb(0, 0, 0);
+    height: 5%;
+    width: 100%;
+    
+      
+}
+
+
+.left{
+    position: fixed;
+    padding-top: 5%;
+    background-color: rgb(28, 0, 0);
+    float: left;
+    width: 12%;
+    height: 100%;
+    padding-left: 0%;
+
+
+}
+
+
+.right{
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 6%;
+    padding-bottom: 5%;
+    bottom: 0;
+    float: right;
+    background-color: rgba(0, 0, 0, 0.600);
+    width: 77%;
+    text-align: left;
+    height: 80%;
+    overflow-y: scroll;
+    scroll-padding-bottom: 5%;
+    
+
+}
+
+h1.title {
+    color: rgb(249, 192, 192);
+    font-family: "Blackwood Castle Regular", serif;
+    text-align: center;
+    font-size: 70px;
+
+}
+
+p.text {
+    color: rgb(247, 247, 247);
+    font-family: "Cheesecake", serif;
+    font-size: 25px;
+}
+
+a.text{
+    color: rgb(247, 247, 247);
+    font-family: "Cheesecake", serif;
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+a.text:hover{
+    color: black;
+    background-color: aliceblue;
+}
+
+.table{
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 25px;
+    min-width: 100%;
+    
+}
+
+.table thead tr{
+    background-color: rgb(247, 247, 247);
+    color: black; 
+    border-left: 5px solid;
+    border-right: 5px solid;
+    border-color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+
+a.table{
+    color: rgb(251, 251, 251);
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+a.table:hover{
+    color: aqua;
+    background-color: black;
+}
+
+.table tbody tr{
+    background-color: rgba(247, 247, 247, 0.167);
+    border-left: 5px solid;
+    border-right: 5px solid;
+    border-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255); 
+    border: 10px;
+    border-color: red;
+    text-align: center;
+
+}
+
+.icons{
+    height: 50px;
+    width: 50px;
+}

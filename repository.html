@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link href="resources/style.css" rel="stylesheet">
+        <title>Swasal|Repository</title>
+    </head>
+
+    <body>
+        <!-- Left half of the page -->
+        <!-- this is the menu section -->
+        <div class="left">  
+            <!-- has interactiver buttons -->
+            <a href="home.html"><button onmouseenter="show()" onmouseleave="hide()" class="sidebuttons" >Home</button></a>
+            <section id="home_submenu" class="submenu" hidden="true">
+                <!-- script for hiding submenu -->
+                <script type="text/javascript">
+                    let flag=true
+                    function hide() {
+                        flag = false
+                        setTimeout(function hide() {
+                        if (flag !=true){
+                            document.getElementById('home_submenu').hidden = true
+                        }
+                        
+                    }, 5000)
+                    }
+                    function show() {
+                        flag= true
+                        document.getElementById('home_submenu').hidden = false
+                       
+                    }
+
+     
+                 </script>
+
+                <a href="home.html#Introduction"><button onmouseover="show()" onmouseleave="hide()" class="subsidebuttons" >Introduction</button></a>
+                <a href="home.html#Links"><button onmouseover="show()" onmouseleave="hide()" class="subsidebuttons" >Social and Links</button></a>
+            </section>
+            <a href="repository.html"><button class="sidebuttons" >Project Repostory</button></a>
+            <a href="contact.html"><button class="sidebuttons" >Contact</button></a>        
+
+    </div>
+
+
+        <div class="right">
+            <!-- main window for adding elements -->
+            <h1 class="title"><a id="Introduction">Repository</a></h1>
+            <p class="text" >
+                This page contains the links to all the assesments done by me during the Winter2023 semester of CSE391 at BRACU.<br>
+
+            </p>
+
+            <table class="table">
+                <thead>
+                    <tr>
+                        <td class="table">Project details</td>
+                        <td class="table">Project Link</td>
+                        <td class="table">Time updated</td>
+                    </tr>
+                </thead>
+                
+                <tbody>
+                    <tr>
+                        <td class="table">Assignment 1</td>
+                        <td class="table"><a class="table" href="home.html">Link to Assignment 1</a></td>
+                        <td class="table">10th September, 2023</td>
+                    </tr>
+                </tbody>    
+
+            </table>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <p id="stats" class="text" style="text-align: right; font-size: 15px;"> Hello</p>
+            <br>
+            <br>
+            <script type="text/javascript">
+                let stats = document.getElementById("stats")
+                function status () {
+                    let link=window.location.href;
+                    let time=document.lastModified;
+                    stats.innerHTML="Location: " + link + "<br>" + "LAst Modified: " + time;
+                        
+                    };
+                window.onload=status()
+            </script>
+           
+        </div>
+        
+
+    </body>
+
+</html>
+
+
+
+

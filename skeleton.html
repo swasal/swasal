@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link href="resources/style.css" rel="stylesheet">
+        <title>Swasal|Home</title>
+    </head>
+
+    <body>
+        <!-- top header of the page -->
+        <div class="top"></div>
+        
+
+        <!-- Left half of the page -->
+        <!-- this is the menu section -->
+        <div class="left">  
+            <!-- has interactiver buttons -->
+            <a href="home.html"><button onmouseenter="show()" onmouseleave="hide()" class="sidebuttons" >Home</button></a>
+            <section id="home_submenu" class="submenu" hidden="true">
+                <!-- script for hiding submenu -->
+                <script type="text/javascript">
+                    let flag=true
+                    function hide() {
+                        flag = false
+                        setTimeout(function hide() {
+                        if (flag !=true){
+                            document.getElementById('home_submenu').hidden = true
+                        }
+                        
+                    }, 5000)
+                    }
+                    function show() {
+                        flag= true
+                        document.getElementById('home_submenu').hidden = false
+                       
+                    }
+
+     
+                 </script>
+
+                <a href="home.html#Introduction"><button onmouseover="show()" onmouseleave="hide()" class="subsidebuttons" >Introduction</button></a>
+                <a href="home.html#Links"><button onmouseover="show()" onmouseleave="hide()" class="subsidebuttons" >Social and Links</button></a>
+            </section>
+            <a href="repository.html"><button class="sidebuttons" >Project Repostory</button></a>
+            <a href="contact.html"><button class="sidebuttons" >Contact</button></a>        
+
+    </div>
+
+
+            <div class="right">
+                <!-- main window for adding elements -->
+                <h1 class="title"><a id="Introduction">Introduction</a></h1>
+                <p class="text" >
+                    Meet Saalem, a multifaceted individual who wears multiple hats with flair and enthusiasm. By day, Saalem is a diligent university student, tirelessly pursuing a degree in computer science. Armed with a passion for coding and a thirst for knowledge, they delve into the intricate world of algorithms and software development, striving to harness the power of technology to make the world a better place.<br><br>
+
+                    But as the sun sets and the coursework settles, a different side of Saalem emerges. A dedicated gamer at heart, they immerse themselves in the virtual realms of League of Legends and various other Massively Multiplayer Online Role-Playing Games (MMORPGs). With nimble fingers dancing across the keyboard and a keen strategic mind, they conquer dungeons, vanquish foes, and lead their virtual comrades to victory.<br><br>
+
+                    Beyond the digital landscapes, Saalem finds solace and excitement in the vibrant world of anime. Their eyes light up as they explore captivating stories, dynamic characters, and imaginative worlds. Whether it's the heartwarming tales of friendship in slice-of-life anime or the adrenaline-pumping action of shonen series, Saalem's love for anime knows no bounds.<br><br>
+
+                    In this dynamic blend of academics, gaming, and anime, Saalem is a testament to the diverse interests and passions that make up the tapestry of their life. With an unwavering dedication to both their studies and their leisure pursuits, they navigate the intricacies of being a computer programmer, a university student, a gamer, and an anime enthusiast with grace and fervor.
+                </p>
+
+                <center><h1 class="title">My kolijar tukra</h1></center>
+            </div>
+        </div>
+
+
+    </body>
+
+</html>
