@@ -12,9 +12,10 @@
         <div class="left">  
             <!-- has interactiver buttons -->
             <a href="home.html"><button onmouseenter="show()" onmouseleave="hide()" class="sidebuttons" >Home</button></a>
+            <!-- dection to hide the submenu and pull them on demand -->
             <section id="home_submenu" class="submenu" hidden="true">
                 <!-- script for hiding submenu -->
-                <script type="text/javascript">
+                <script>
                     let flag=true
                     function hide() {
                         flag = false
@@ -23,24 +24,28 @@
                             document.getElementById('home_submenu').hidden = true
                         }
                         
-                    }, 5000)
+                    }, 2000)
                     }
                     function show() {
                         flag= true
                         document.getElementById('home_submenu').hidden = false
-                       
+                        
                     }
 
-     
-                 </script>
+        
+                    </script>
 
                 <a href="home.html#Introduction"><button onmouseover="show()" onmouseleave="hide()" class="subsidebuttons" >Introduction</button></a>
+                <a href="home.html#personal_info"><button onmouseover="show()" onmouseleave="hide()" class="subsidebuttons" >Personal Info</button></a>
+                <a href="home.html#education"><button onmouseover="show()" onmouseleave="hide()" class="subsidebuttons" >Education</button></a>
+                <a href="home.html#interests"><button onmouseover="show()" onmouseleave="hide()" class="subsidebuttons" >Interests</button></a>
                 <a href="home.html#Links"><button onmouseover="show()" onmouseleave="hide()" class="subsidebuttons" >Social and Links</button></a>
             </section>
             <a href="repository.html"><button class="sidebuttons" >Project Repostory</button></a>
             <a href="contact.html"><button class="sidebuttons" >Contact</button></a>        
 
-    </div>
+            
+        </div>
 
 
             <div class="right">
@@ -61,6 +66,8 @@
                 <br>
                 <br>
                 <br>
+                <!-- section breaker -->
+                <div style="height: 350px; width: 100%;"></div>
                 <p id="stats" class="text" style="text-align: right; font-size: 15px;"> Hello</p>
                 <br>
                 <br>
