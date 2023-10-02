@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link href="resources/style.css" rel="stylesheet">
+        <title>Swasal|Home</title>
+    </head>
+
+    <body>
+        <!-- Left half of the page -->
+        <!-- this is the menu section -->
+        <div class="left">  
+            <!-- has interactiver buttons -->
+            <a href="home.html"><button onmouseenter="show()" onmouseleave="hide()" class="sidebuttons" >Home</button></a>
+            <!-- dection to hide the submenu and pull them on demand -->
+            <section id="home_submenu" class="submenu" hidden="true">
+                <!-- script for hiding submenu -->
+                <script>
+                    let flag=true
+                    function hide() {
+                        flag = false
+                        setTimeout(function hide() {
+                        if (flag !=true){
+                            document.getElementById('home_submenu').hidden = true
+                        }
+                        
+                    }, 2000)
+                    }
+                    function show() {
+                        flag= true
+                        document.getElementById('home_submenu').hidden = false
+                        
+                    }
+
+        
+                    </script>
+
+                <a href="home.html#Introduction"><button onmouseover="show()" onmouseleave="hide()" class="subsidebuttons" >Introduction</button></a>
+                <a href="home.html#personal_info"><button onmouseover="show()" onmouseleave="hide()" class="subsidebuttons" >Personal Info</button></a>
+                <a href="home.html#education"><button onmouseover="show()" onmouseleave="hide()" class="subsidebuttons" >Education</button></a>
+                <a href="home.html#interests"><button onmouseover="show()" onmouseleave="hide()" class="subsidebuttons" >Interests</button></a>
+                <a href="home.html#Links"><button onmouseover="show()" onmouseleave="hide()" class="subsidebuttons" >Social and Links</button></a>
+            </section>
+            <a href="repository.html"><button class="sidebuttons" >Project Repostory</button></a>
+            <a href="contact.html"><button class="sidebuttons" >Contact</button></a>        
+
+            
+        </div>
+
+
+        <div class="right">
+            <h1 class="title">Saalem Mohammed</h1>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h1 id="Introduction" class="title">Introduction</h1>
+            <p class="text" >
+                Meet Saalem, a multifaceted individual who wears multiple hats with flair and enthusiasm. By day, Saalem is a diligent university student, tirelessly pursuing a degree in computer science. Armed with a passion for coding and a thirst for knowledge, they delve into the intricate world of algorithms and software development, striving to harness the power of technology to make the world a better place.<br><br>
+
+                But as the sun sets and the coursework settles, a different side of Saalem emerges. A dedicated gamer at heart, they immerse themselves in the virtual realms of League of Legends and various other Massively Multiplayer Online Role-Playing Games (MMORPGs). With nimble fingers dancing across the keyboard and a keen strategic mind, they conquer dungeons, vanquish foes, and lead their virtual comrades to victory.<br><br>
+
+                Beyond the digital landscapes, Saalem finds solace and excitement in the vibrant world of anime. Their eyes light up as they explore captivating stories, dynamic characters, and imaginative worlds. Whether it's the heartwarming tales of friendship in slice-of-life anime or the adrenaline-pumping action of shonen series, Saalem's love for anime knows no bounds.<br><br>
+
+                In this dynamic blend of academics, gaming, and anime, Saalem is a testament to the diverse interests and passions that make up the tapestry of their life. With an unwavering dedication to both their studies and their leisure pursuits, they navigate the intricacies of being a computer programmer, a university student, a gamer, and an anime enthusiast with grace and fervor.
+            </p>
+
+            <!-- section breaker -->
+            <div style="height: 300px; width: 100%;"></div>
+
+            <h1 id="personal_info" class="title">Personal Info</h1>
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <td class="table" style="text-align: right; padding-right: 10px;"><b>Name</b></td>
+                        <td class="table" style="text-align: left; padding-left: 10px;">Mohammed Saalem</td>
+                        <!-- add image here -->
+                        <td rowspan="4" >add image here</td>
+                    </tr>
+                    <tr>
+                        <td class="table" style="text-align: right; padding-right: 10px;"><b>Date of Birth</b></td>
+                        <td class="table" style="text-align: left; padding-left: 10px;">28th December, 2001</td>
+                    </tr>
+                    <tr>
+                        <td class="table" style="text-align: right; padding-right: 10px;"><b>Phone</b></td>
+                        <td class="table" style="text-align: left; padding-left: 10px;">01400677321</td>
+                    </tr>
+                    <tr>
+                        <td class="table" style="text-align: right; padding-right: 10px;"><b>Email</b></td>
+                        <td class="table" style="text-align: left; padding-left: 10px;"><a class="text" href="mailto:mohammed.saalem@g.bracu.ac.bd">mohammed.saalem@g.bracu.ac.bd</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+
+            <!-- section breaker -->
+            <div style="height: 300px; width: 100%;"></div>
+
+            <h1 id="education" class="title">Education</h1>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <td class="table" style="text-align: right; padding-right: 10px; color: rgb(0, 0, 0);"><b>Degree</b></td>
+                        <td class="table" style="text-align: left; padding-left: 10px; color: rgb(0, 0, 0);"><b>Details</b></td>
+                        
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr style="height: 40px;">
+                        <td></td>
+                        <td></td>   
+                    </tr>
+
+                    <tr>
+                        <td rowspan="2" class="table" style="text-align: right; padding-right: 10px;"><b>Highschool</b></td>
+                        <td class="table" style="text-align: left; padding-left: 10px;">Bangladesh School Jeddah, English Section<br>2015-2020<br><br>O-levels: 2018<br>A-levels: 2020</td>
+                    </tr>
+
+                    <tr>
+                        <td class="table" style="text-align: left; padding-left: 10px;"><br>Indian International School, Taif<br>2008-2015</td>
+                    </tr>
+
+                    <tr style="height: 40px;">
+                        <td></td>
+                        <td></td>   
+                    </tr>
+
+                    <tr>
+                        <td class="table" style="text-align: right; padding-right: 10px;"><b>Undergraduate</b></td>
+                        <td class="table" style="text-align: left; padding-left: 10px;">Brac university, Bangladesh<br>Major in Coputer Science<br>2021-present</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+
+            <!-- section breaker -->
+            <div style="height: 300px; width: 100%;"></div>
+
+            <h1 id="interests" class="title">Interests</h1>
+            <table class="table">
+                <tbody>
+                    <tr>
+                    
+                    <td style="width: 10%;"></td>
+
+                    <!-- hobby list -->
+                    <td style="width: 40%;">
+                        <p style="text-align: left;">My Interests are</p>
+                        <ul style="text-align: left; list-style-position: inside;">
+                            <li>Listening to Music</li>
+                            <li>Gaming</li>
+                            <li>Anime</li>
+                            <li>Reading books</li>
+                            <li>Going for long walks</li>
+                        </ul>
+                    </td>
+           
+
+                    <!-- quote -->
+                    <td style="width: 40%;">
+                        <p style="text-align: left;">Some of my favorite quotes are:</p>
+                        <ul style="text-align: left; list-style-position: inside;">
+                            <li>"Time flows constantly, it doesn't care about the people who are struggling."</li>
+                            <p style="text-align: right;">-Ichirō Ōkouchi</p>
+                            <li>"A life that lives without doing anything is the same as a slow death."</li>
+                            <p style="text-align: right;">-Ichirō Ōkouchi</p>
+                        </ul>
+                        
+                    </td>
+
+                    <td style="width: 10%;"></td>
+
+                    </tr>
+                    
+                </tbody>
+            </table>
+
+
+            <!-- section breaker -->
+            <div style="height: 300px; width: 100%;"></div>
+
+
+            <h1 id="Links" class="title">Socials And Links</h1>
+            <p class="text">Favorite Song: <a class="text" href="https://open.spotify.com/track/60NXuYborLfMiTPJMcxkM5?si=0500a83ebe6e438b" target="_blank">Only One by ILENIUM</a> and <a class="text" href="https://open.spotify.com/track/5sdQOyqq2IDhvmx2lHOpwd?si=97c14f1a200a49cb" target="_blank">Super Shy by NewJeans</a></p>
+            <p class="text">Instagram: <a class="text" href="https://www.instagram.com/saalem.mohammed/" target="_blank">saalem.mohammed</a></p>
+            
+            <table class="table" >
+                <tbody>
+                    <tr style="background-color:rgba(0, 0, 0, 0.311);">
+                    <td class=" table"><a href="https://open.spotify.com/user/x8aphbrcjfqiwl957vkfygq4i?si=7ee104abf92f4d6d" target="_blank"><img class="icons" src="resources/icons/spotify.gif" alt="Spotify Logo"></a></td>
+                    <td class=" table"><a href="https://www.instagram.com/saalem.mohammed/" target="_blank"><img class="icons" src="resources/icons/instagram.gif" alt="Instagram Logo"></a></td>
+                    <td class=" table"><a href="https://www.instagram.com/saalem.mohammed/" target="_blank"><img class="icons" src="resources/icons/instagram.gif" alt="Instagram Logo"></a></td>
+                    <td class=" table"><a href="https://www.instagram.com/saalem.mohammed/" target="_blank"><img class="icons" src="resources/icons/instagram.gif" alt="Instagram Logo"></a></td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+            <!-- section breaker -->
+            <div style="height: 300px; width: 100%;"></div>
+
+
+            <p id="stats" class="text" style="text-align: right; font-size: 15px;"> Hello</p> 
+            <!-- section breaker -->
+            <div style="height: 100px; width: 100%;"></div>               
+            
+        </div>
+
+        <script>
+            let stats = document.getElementById("stats")
+            function status () {
+                let link=window.location.href;
+                let time=document.lastModified;
+                stats.innerHTML="Location: " + link + "<br>" + "LAst Modified: " + time;
+                    
+                };
+            window.onload=status()
+        </script>
+        
+
+
+
+    </body>
+
+</html>
