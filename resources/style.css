@@ -151,6 +151,9 @@ h1.title {
     font-family: "Blackwood Castle Regular", serif;
     text-align: center;
     font-size: 70px;
+    text-decoration: none;
+    text-transform: none;
+    text-decoration-line: none;
 
 }
 
@@ -158,6 +161,13 @@ p.text {
     color: rgb(247, 247, 247);
     font-family: "Cheesecake", serif;
     font-size: 25px;
+}
+
+a.title{
+    color: rgb(247, 247, 247);
+    font-family: "Cheesecake", serif;
+    font-size: 25px;
+    text-decoration: none;
 }
 
 a.text{
