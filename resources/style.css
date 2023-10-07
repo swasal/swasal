@@ -224,5 +224,11 @@ td.table {
 .icons{
     height: 50px;
     width: 50px;
+    align-self: center;
+}
+
+.mypic{
+    height: 256px ;
+    width: 144px ;
 }
 
