@@ -174,7 +174,7 @@ a.text{
     color: rgb(247, 247, 247);
     font-family: "Cheesecake", serif;
     font-size: 25px;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 a.text:hover{
